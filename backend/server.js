@@ -17,6 +17,7 @@ const pool = require('./config/database');
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/records', require('./routes/recordRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
